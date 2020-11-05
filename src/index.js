@@ -3,7 +3,6 @@ import { render } from 'react-dom';
 import App from './app';
 
 const rootEl = document.getElementById('app');
-console.log("asdsa");
 
 render(<App />, rootEl);
 

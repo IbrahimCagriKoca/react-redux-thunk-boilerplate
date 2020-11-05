@@ -28,16 +28,23 @@ module.exports = {
                     use: ['css-loader']
                 }
             )
-        },
-        {
+        }, {
             test: /\.(png|jpg|gif)$/,
             use: [
                 {
                     loader: 'file-loader'
                 }
             ]
-        }
-        ]
+        }, {
+            test: /\.scss$/,
+            use: [{
+                 loader: "style-loader"
+               }, {
+                 loader: "css-loader" 
+               }, {
+                loader: "sass-loader"
+            }]
+        }]
     },
     plugins: [
         new HtmlWebPackPlugin({

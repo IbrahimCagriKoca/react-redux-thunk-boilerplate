@@ -1,0 +1,34 @@
+$font-stack: Helvetica,
+sans-serif;
+$primary-color: #005ba4;
+$button-color: #2fb45a;
+
+body {
+    margin: 0;
+    display: block;
+    background-color: $primary-color;
+}
+.container {
+    display: flex;
+    height: 50vw;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   span {
+        background-color: $primary-color;
+        font: 100% $font-stack;
+        color: #ffffff;
+        font-size: 5vw;
+
+    }
+
+    button {
+        width: 10vw;
+        font-size: 2vw;
+        background-color: $button-color;
+        border: 0;
+        border-radius: 1vw;
+        color: #ffffff;
+        outline: none;
+    }
+}
